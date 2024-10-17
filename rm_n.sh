@@ -12,3 +12,5 @@ dir=$1
 n=$2
 
 find "$dir" -type f -size +"${n}c" -exec rm {} \;
+
+echo "Files in $dir larger than $n bytes have been removed."
